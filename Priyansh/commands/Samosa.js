@@ -22,7 +22,7 @@ react.includes("samosaa")) {
         body: `${name} 𝐋𝐎 𝐉𝐀𝐀𝐍 SAMOSA KHAO💐✿`,attachment: fs.createReadStream(__dirname + `/noprefix/samosa.jpg`)
       }
       api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🫗", event.messageID, (err) => {}, true)
+    api.setMessageReaction("😋", event.messageID, (err) => {}, true)
     }
   }
   module.exports.run = async ({ api, event, Currencies, args, utils, client, global }) => {
