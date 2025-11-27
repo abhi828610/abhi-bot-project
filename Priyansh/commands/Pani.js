@@ -14,7 +14,7 @@ module.exports.handleEvent = async ({ api, event, Users, Currencies, args, utils
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
   if(react.includes("paani") ||
-     react.includes("PAANI") || react.includes("BURGER") || react.includes("burger") ||
+     react.includes("PAANI") || react.includes("PANI") || react.includes("pani") ||
 react.includes("Pani") ||
 react.includes("watert") ||     
 react.includes("WATER")) {
@@ -22,7 +22,7 @@ react.includes("WATER")) {
         body: `${name} 𝐋𝐎 𝐉𝐀𝐀𝐍 PANI PIYO💐✿`,attachment: fs.createReadStream(__dirname + `/noprefix/pani.jpg`)
       }
       api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("😋", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🫗", event.messageID, (err) => {}, true)
     }
   }
   module.exports.run = async ({ api, event, Currencies, args, utils, client, global }) => {
