@@ -1,12 +1,12 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "mahadev",
+	name: "raam",
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "MrTomXxX", 
 	description: "hihihihi",
 	commandCategory: "no prefix",
-	usages: "mahadev",
+	usages: "raam",
     cooldowns: 5, 
 };
 
@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 				attachment: fs.createReadStream(__dirname + `/noprefix/ram.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🔱", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🚩", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
