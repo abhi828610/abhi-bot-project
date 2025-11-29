@@ -47,7 +47,7 @@ module.exports.run = async function ({ api, event, args }) {
     const videoUrl = first.url;
     const author = first.author.name;
 
-    api.sendMessage(`✅  »»𝑶𝑾𝑵𝑬𝑹««★™  »»𝑺𝑯𝑨𝑨𝑵 𝑲𝑯𝑨𝑵««
+    api.sendMessage(`✅  »»𝑶𝑾𝑵𝑬𝑹««★™  »»༄𒁍≛⃝𝐌𝐑.𝐀𝐁𝐇𝐈𝐒𝐇𝐄𝐊««
           🥀𝒀𝑬 𝑳𝑶 𝑩𝑨𝑩𝒀 𝑨𝑷𝑲𝑰💞 : ${title}\n📥 Downloading ${format}...`, threadID, messageID);
 
     // Fetch download URL using API
@@ -96,7 +96,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     // Send the file directly without additional status message
     await api.sendMessage({
-      body: ` »»𝑶𝑾𝑵𝑬𝑹««★™  »»ABHISHEK SINGH««
+      body: ` »»𝑶𝑾𝑵𝑬𝑹««★™  »»༄𒁍≛⃝𝐌𝐑.𝐀𝐁𝐇𝐈𝐒𝐇𝐄𝐊 𝐒𝐈𝐍𝐆𝐇««
           🥀𝒀𝑬 𝑳𝑶 𝑩𝑨𝑩𝒀 𝑨𝑷𝑲𝑰💞 ${title}\n📺 ${author}\n🔗 ${videoUrl}`,
       attachment: fs.createReadStream(filePath)
     }, threadID, messageID);
